@@ -38,12 +38,13 @@ cd /usr/share/moonraker/components/
 ```
 
 # Backup any existing file (if present)
+```bash
 [ -f spoolman.py ] && mv spoolman.py spoolman.py.bak
-
+```
 # Download the patched spoolman.py
-wget https://raw.githubusercontent.com/<YOUR-GITHUB-USERNAME>/<YOUR-REPO-NAME>/main/spoolman.py
-
-*(Replace `<YOUR-GITHUB-USERNAME>` and `<YOUR-REPO-NAME>` with your actual GitHub username and repository name).*
+```bash
+wget https://raw.githubusercontent.com/lucasbalon/moonraker-spoolman-creality/main/spoolman.py
+```
 
 ---
 
@@ -61,18 +62,9 @@ sync_rate: 5
 ```
 ---
 
-### Step 3: Test and Restart Moonraker
-
-1. **Test Python import** to ensure there are no missing module errors:
+### Step 3: Restart printer
 ```bash
-/usr/share/moonraker-env/bin/python -c "import sys; sys.path.insert(0, '/usr/share/moonraker'); from components import spoolman"
-```
-
-*If the command returns quietly without errors, the patch is working!*
-
-2. **Restart Moonraker**:
-```bash
-systemctl restart moonraker
+reboot
 ```
 ---
 
