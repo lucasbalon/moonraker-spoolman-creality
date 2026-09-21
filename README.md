@@ -2,7 +2,7 @@
 
 A compatibility patch for the **Spoolman** component in Moonraker, specifically adapted for the modified, legacy Moonraker builds shipped with Creality OS.
 
-> ⚠️ **Compatibility Note:** This patch was created and **tested on a Creality K2 Plus**. It should theoretically work on other Creality OS machines (K1, K1 Max, K1C) running the same Moonraker base. Feedback and test results for other models are welcome!
+> ⚠️ **Compatibility Note:** This patch was created and **tested on a Creality K2**. It should theoretically work on other Creality OS machines (K1, K1 Max, K1C) running the same Moonraker base. Feedback and test results for other models are welcome!
 
 ---
 
@@ -71,7 +71,7 @@ reboot
 ## 🧪 Testing & Feedback
 
 This component has been verified on:
-- [x] **Creality K2 Plus** (Creality OS)
+- [x] **Creality K2** (Creality OS)
 - [ ] **Creality K1 / K1 Max / K1C** *(Untested - feel free to open an issue or PR with your results!)*
 
 ---
